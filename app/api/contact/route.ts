@@ -13,7 +13,7 @@ export async function POST(req: Request) {
     const { error } = await resend.emails.send({
       from: process.env.CONTACT_FROM_EMAIL ?? 'VSL Website <onboarding@resend.dev>',
       to: process.env.CONTACT_TO_EMAIL ?? 'info@vsolcorp.com',
-      replyTo: email,
+      reply_to: email,
       subject: `Quote request — ${service ?? 'General'}${org ? ` — ${org}` : ''}`,
       text: `Name: ${name}\nOrganization: ${org || '—'}\nEmail: ${email}\nService: ${service || '—'}\n\n${message}`,
     });
