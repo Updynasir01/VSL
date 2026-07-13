@@ -24,7 +24,7 @@ export default function ContactPage() {
           <div className="flex flex-col gap-5">
             {[
               ['Phone / WhatsApp', <a key="p" href="tel:+252615942403" className="font-heading text-lg font-semibold text-light hover:text-accent">+252 61 5942403</a>],
-              ['Email', <a key="e" href="mailto:info@vsolcorp.com" className="font-heading text-lg font-semibold text-light hover:text-accent">info@vsolcorp.com</a>],
+              ['Email', <a key="e" href="mailto:visolutd@visionsolution.tech" className="font-heading text-lg font-semibold text-light hover:text-accent">visolutd@visionsolution.tech</a>],
               ['Office', <p key="o" className="font-heading text-lg font-semibold">Via Taleex, KM-4, Mogadishu, SO</p>],
             ].map(([label, node]) => (
               <div key={label as string} className="rounded-2xl border border-light/10 px-6 py-5">

@@ -12,7 +12,7 @@ export async function POST(req: Request) {
     const resend = new Resend(process.env.RESEND_API_KEY);
     const { error } = await resend.emails.send({
       from: process.env.CONTACT_FROM_EMAIL ?? 'VSL Website <onboarding@resend.dev>',
-      to: process.env.CONTACT_TO_EMAIL ?? 'info@vsolcorp.com',
+      to: process.env.CONTACT_TO_EMAIL ?? 'visolutd@visionsolution.tech',
       reply_to: email,
       subject: `Quote request — ${service ?? 'General'}${org ? ` — ${org}` : ''}`,
       text: `Name: ${name}\nOrganization: ${org || '—'}\nEmail: ${email}\nService: ${service || '—'}\n\n${message}`,

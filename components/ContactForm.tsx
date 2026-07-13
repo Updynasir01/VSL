@@ -95,7 +95,7 @@ export default function ContactForm() {
               : 'Send request →'}
       </button>
       <p className="mt-3.5 text-center text-xs text-dim">
-        Your request goes straight to the VSL team at info@vsolcorp.com.
+        Your request goes straight to the VSL team at visolutd@visionsolution.tech.
       </p>
     </form>
   );

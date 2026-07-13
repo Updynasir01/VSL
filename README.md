@@ -22,7 +22,7 @@ npm run dev
 | Variable | What |
 | --- | --- |
 | `RESEND_API_KEY` | Free key from https://resend.com/api-keys |
-| `CONTACT_TO_EMAIL` | Where submissions arrive (info@vsolcorp.com) |
+| `CONTACT_TO_EMAIL` | Where submissions arrive (visolutd@visionsolution.tech) |
 | `CONTACT_FROM_EMAIL` | Verified sender. Use `VSL Website <onboarding@resend.dev>` until your domain is verified in Resend |
 | `NEXT_PUBLIC_SITE_URL` | Your production URL, e.g. `https://vsolcorp.com` |
 

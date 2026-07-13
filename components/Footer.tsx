@@ -23,7 +23,7 @@ export default function Footer() {
         <div className="flex flex-col gap-3">
           <p className="mb-1 font-mono text-[11px] uppercase tracking-[0.16em] text-dim">Contact</p>
           <a href="tel:+252615942403" className="text-sm text-mist hover:text-accent">+252 61 5942403</a>
-          <a href="mailto:info@vsolcorp.com" className="text-sm text-mist hover:text-accent">info@vsolcorp.com</a>
+          <a href="mailto:visolutd@visionsolution.tech" className="text-sm text-mist hover:text-accent">visolutd@visionsolution.tech</a>
           <p className="text-sm text-mist">Via Taleex, KM-4, Mogadishu, SO</p>
         </div>
         <div>
