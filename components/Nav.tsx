@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 import { usePathname } from 'next/navigation';
@@ -7,6 +8,7 @@ import { usePathname } from 'next/navigation';
 const links = [
   { href: '/services', label: 'Services' },
   { href: '/#why', label: 'Why VSL' },
+  { href: '/#projects', label: 'Projects' },
   { href: '/impact', label: 'Impact' },
   { href: '/contact', label: 'Contact' },
 ];
@@ -18,8 +20,18 @@ export default function Nav() {
   return (
     <nav className="sticky top-0 z-50 border-b border-light/10 bg-ink/85 backdrop-blur-md">
       <div className="flex items-center justify-between gap-6 px-6 py-4 md:px-12">
-        <Link href="/" className="font-heading text-xl font-bold tracking-[0.12em] text-light">
-          VSL<span className="text-accent">.</span>
+        <Link href="/" className="flex items-center gap-2.5" aria-label="Vision Solutions Limited home">
+          <Image
+            src="/logos/vslLogo.png"
+            alt="Vision Solutions Limited"
+            width={36}
+            height={36}
+            className="h-9 w-9 rounded-md object-contain"
+            priority
+          />
+          <span className="font-heading text-xl font-bold tracking-[0.12em] text-light">
+            VSL<span className="text-accent">.</span>
+          </span>
         </Link>
         <div className="hidden items-center gap-8 text-sm font-medium md:flex">
           {links.map((l) => (

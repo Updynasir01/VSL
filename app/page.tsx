@@ -335,6 +335,99 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ONGOING PROJECTS */}
+      <section id="projects" className="bg-ink px-6 py-28 md:px-12">
+        <div className="mx-auto max-w-6xl">
+          <p className="mb-6 font-mono text-[13px] uppercase tracking-[0.18em] text-accent">
+            Ongoing projects
+          </p>
+          <h2 className="mb-4 max-w-2xl font-heading text-[clamp(28px,3.4vw,42px)] font-semibold leading-tight [text-wrap:pretty]">
+            What we&apos;re building across Somalia right now.
+          </h2>
+          <p className="mb-16 max-w-xl text-[15px] leading-relaxed text-mist">
+            Live engagements spanning ports, agriculture and enterprise operations — from design
+            through deployment and support.
+          </p>
+
+          <div className="grid gap-10 md:grid-cols-3 md:gap-8">
+            {[
+              {
+                status: 'In progress',
+                sector: 'Maritime & logistics',
+                title: 'Port operations digital platform',
+                desc: 'A unified operations dashboard for berth scheduling, cargo visibility and stakeholder reporting at Mogadishu Port — replacing fragmented spreadsheets with live data.',
+                scope: 'Build · Advise',
+                image:
+                  'https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=900&q=80',
+                alt: 'Cargo containers at a port',
+              },
+              {
+                status: 'In progress',
+                sector: 'Agriculture',
+                title: 'Institute learning & field data system',
+                desc: 'Custom platform for an agricultural institute — student records, field research capture and programme reporting in one secure cloud environment.',
+                scope: 'Build · Run',
+                image:
+                  'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&w=900&q=80',
+                alt: 'Agricultural fields under open sky',
+              },
+              {
+                status: 'In progress',
+                sector: 'Enterprise IT',
+                title: '24/7 monitoring & help-desk rollout',
+                desc: 'Proactive infrastructure monitoring, patching and a bilingual help-desk for a multi-site enterprise — keeping critical systems online around the clock.',
+                scope: 'Run · Advise',
+                image:
+                  'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80',
+                alt: 'Operations monitoring screens',
+              },
+            ].map((project) => (
+              <article key={project.title} className="flex flex-col">
+                <div className="relative mb-6 h-[200px] overflow-hidden rounded-[18px]">
+                  <Image
+                    src={project.image}
+                    alt={project.alt}
+                    fill
+                    className="object-cover transition-transform duration-500 hover:scale-[1.03]"
+                    sizes="(min-width: 768px) 33vw, 100vw"
+                  />
+                </div>
+                <div className="mb-3 flex flex-wrap items-center gap-x-3 gap-y-1">
+                  <span className="font-mono text-[11px] uppercase tracking-[0.14em] text-accent">
+                    {project.status}
+                  </span>
+                  <span className="text-dim" aria-hidden>
+                    ·
+                  </span>
+                  <span className="font-mono text-[11px] uppercase tracking-[0.14em] text-dim">
+                    {project.sector}
+                  </span>
+                </div>
+                <h3 className="mb-3 font-heading text-xl font-semibold leading-snug">
+                  {project.title}
+                </h3>
+                <p className="mb-5 flex-1 text-[15px] leading-relaxed text-mist">{project.desc}</p>
+                <p className="border-t border-light/10 pt-4 font-mono text-[11px] uppercase tracking-[0.14em] text-fog">
+                  {project.scope}
+                </p>
+              </article>
+            ))}
+          </div>
+
+          <div className="mt-16 flex flex-wrap items-center justify-between gap-6 border-t border-light/10 pt-10">
+            <p className="max-w-md text-[15px] text-mist">
+              Have a programme in motion? We can step in at strategy, build or run.
+            </p>
+            <Link
+              href="/contact"
+              className="inline-flex items-center gap-2 rounded-full border border-light/25 px-6 py-3 text-[15px] font-semibold transition-colors hover:border-accent hover:text-accent"
+            >
+              Discuss your project →
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="bg-deep px-6 pt-28 md:px-12">
         <div className="mx-auto flex max-w-6xl flex-wrap items-end justify-between gap-10 border-b border-light/10 pb-24">

@@ -17,6 +17,10 @@ export const metadata: Metadata = {
   },
   description:
     'VSL designs, builds and runs the digital systems that let enterprises, institutions and governments in Somalia modernize with confidence. ICT consulting, software development and 24/7 support.',
+  icons: {
+    icon: [{ url: '/logos/vslLogo.png', type: 'image/png' }],
+    apple: [{ url: '/logos/vslLogo.png', type: 'image/png' }],
+  },
   openGraph: {
     type: 'website',
     url: siteUrl,
@@ -24,6 +28,7 @@ export const metadata: Metadata = {
     title: 'Vision Solutions Limited — Enterprise Technology for the Horn of Africa',
     description:
       'ICT consulting, software development and 24/7 support — one accountable technology partner in Mogadishu.',
+    images: [{ url: '/logos/vslLogo.png', width: 512, height: 512, alt: 'Vision Solutions Limited' }],
   },
 };
 
